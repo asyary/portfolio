@@ -1,4 +1,4 @@
-# asyary@portfolio
+# asyary@portfolio:~$
 
 A terminal-style portfolio website :D
 
