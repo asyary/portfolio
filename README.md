@@ -2,6 +2,8 @@
 
 A terminal-style portfolio website :D
 
+**Live Demo:** [asyary.github.io/portfolio](https://asyary.github.io/portfolio/)
+
 ## Features
 
 - **Terminal UI Design** - Terminal-esque aesthetic using Bootstrap
