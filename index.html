@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>asyary@portfolio:~$</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body class="text-light font-monospace d-flex align-items-center min-vh-100 py-4">
+
+	<div class="container">
+		<div id="term-box" class="fade-box border border-secondary rounded shadow-lg p-4 mx-auto"
+			style="max-width: 800px; background-color: #121212;">
+
+			<div class="d-flex gap-2 mb-4">
+				<div class="bg-danger rounded-circle" style="width: 12px; height: 12px;"></div>
+				<div class="bg-warning rounded-circle" style="width: 12px; height: 12px;"></div>
+				<div class="bg-success rounded-circle" style="width: 12px; height: 12px;"></div>
+			</div>
+
+			<div class="mb-2">
+				<span class="text-success fw-bold">asyary@portfolio</span>:~$ <span id="cmd-text"></span><span
+					class="blink bg-success d-inline-block ms-1"
+					style="width:8px; height:16px; vertical-align:text-bottom;"></span>
+			</div>
+
+			<div id="dynamic-container">
+				<div class="d-flex flex-wrap gap-3 mt-2 mb-3 border-bottom border-secondary pb-3">
+					<span class="text-success">></span>
+					<span class="tab-btn text-success fw-bold" onclick="switchTab('about', this)">./about.sh</span>
+					<span class="tab-btn text-secondary" onclick="switchTab('projects', this)">./projects.sh</span>
+					<span class="tab-btn text-secondary" onclick="switchTab('contact', this)">./contact.sh</span>
+				</div>
+
+				<div id="about" class="tab-pane">
+					<h2 class="text-white mt-2">Hello World!</h2>
+					<p class="text-light">Hi there! I'm Asyary, an Undergraduate Informatics Engineering at UNESA. I work as a Penetration Tester (Ethical Hacker) since 2023, and I've been doing Backend Development using PHP frameworks such as Laravel and CI, and JavaScript Runtime Environments such as NodeJS since 2021.</p>
+					<p class="text-light">My professional track record ranges from conducting high-stakes security assessments on a government infrastructure at Kementerian PU, securing infrastructure for a US-based science and literature organization (under NDA), and as a Web Security Bootcamp Mentor at KSM Cyber Security.</p>
+					<p class="text-light">I love sharing what I learn. You can check out my technical writeups on my Medium: <a href="https://asyary.medium.com/" target="_blank" class="text-decoration-underline">https://asyary.medium.com/</a></p>
+				</div>
+
+				<div id="projects" class="tab-pane">
+					<div class="row g-3 mt-1 pb-2">
+						<div class="col-md-6">
+							<div class="border border-secondary p-3 bg-black bg-opacity-25 h-100 text-center">
+								<a href="https://asyary.medium.com/how-i-hacked-one-of-the-largest-ministries-in-indonesia-1fba947893e1" target="_blank">
+									<img src="img/pu-3x2.png" alt="Kementerian PU"
+										class="img-fluid mb-3 border border-dark">
+								</a>
+								<a href="https://asyary.medium.com/how-i-hacked-one-of-the-largest-ministries-in-indonesia-1fba947893e1" target="_blank" class="text-decoration-underline"><h5 class="mb-2">Kementerian PU</h5></a>
+								<p class="text-light small m-0">I interned at the Ministry of Public Works (Kementerian PU) for about four months as a penetration tester. This is the story of how I hacked the root domain server of Indonesia’s Ministry of Public Works, pu.go.id.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="border border-secondary p-3 bg-black bg-opacity-25 h-100 text-center">
+								<a href="https://asyary.medium.com/600-vulnerability-my-first-bug-hunting-journey-98b961a62f4b" target="_blank">
+									<img src="img/us-3x2.png" alt="US-Based Organization"
+										class="img-fluid mb-3 border border-dark">
+								</a>
+								<a href="https://asyary.medium.com/600-vulnerability-my-first-bug-hunting-journey-98b961a62f4b" target="_blank" class="text-decoration-underline"><h5 class="mb-2">US-Based Organization</h5></a>
+								<p class="text-light small m-0">I worked with a US-based science and literature organizations to secure their digital infrastructure under non-disclosure agreements. This is the story of how I earned my first paid bug bounty.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="contact" class="tab-pane">
+					<p class="text-light mt-2">You can reach out and/or connect with me through any of the following channels:</p>
+					<ul class="list-unstyled">
+						<li>> <span class="text-secondary">Email:</span> <a href="mailto:asyaryrh@proton.me" class="text-light text-decoration-underline">asyaryrh@proton.me</a></li>
+						<li>> <span class="text-secondary">GitHub:</span> <a href="https://github.com/asyary" target="_blank" class="text-light text-decoration-underline">github.com/asyary</a></li>
+						<li>> <span class="text-secondary">LinkedIn:</span> <a href="https://linkedin.com/in/asyary" target="_blank" class="text-light text-decoration-underline">linkedin.com/in/asyary</a></li>
+						<li>> <span class="text-secondary">Medium:</span> <a href="https://asyary.medium.com" target="_blank" class="text-light text-decoration-underline">asyary.medium.com</a></li>
+						<li>> <span class="text-secondary">PGP Public Key:</span> <a href="https://keys.openpgp.org/search?q=asyaryrh@proton.me" target="_blank" class="text-light text-decoration-underline">keys.openpgp.org</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
